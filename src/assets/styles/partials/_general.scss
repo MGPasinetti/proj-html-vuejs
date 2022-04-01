@@ -1,5 +1,7 @@
 html {
 	font-family: 'Fredoka', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
 }
 
 .container {
@@ -7,4 +9,11 @@ html {
 	height: 100vh;
 	margin: 0 auto;
 	background-color: whitesmoke;
+}
+
+.container-sec {
+	max-width: 900px;
+	height: 4rem;
+	background-color: $bkg_color_white;
+	margin: 0 auto;
 }

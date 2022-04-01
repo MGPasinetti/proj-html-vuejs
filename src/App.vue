@@ -1,16 +1,14 @@
 <template>
   <div id="app">
-    <div class="container">
-      <HeaderSb />
-      <Herosb />
-      <GridCardsSec />
-      <TipsTricksSec />
-      <BizFeaturesSec />
-      <TestimonialsSec />
-      <ContactFormSec />
-      <PostsSec />
-      <FooterSb />
-    </div>
+    <HeaderSb />
+    <Herosb />
+    <GridCardsSec />
+    <TipsTricksSec />
+    <BizFeaturesSec />
+    <TestimonialsSec />
+    <ContactFormSec />
+    <PostsSec />
+    <FooterSb />
   </div>
 </template>
 
