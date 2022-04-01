@@ -1,28 +1,46 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container">
+      <HeaderSb />
+      <Herosb />
+      <GridCardsSec />
+      <TipsTricksSec />
+      <BizFeaturesSec />
+      <TestimonialsSec />
+      <ContactFormSec />
+      <PostsSec />
+      <FooterSb />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderSb from './components/HeaderSb.vue';
+import Herosb from './components/HeroSb.vue';
+import GridCardsSec from './components/GridCardsSec.vue';
+import TipsTricksSec from './components/TipsTricksSec.vue';
+import BizFeaturesSec from './components/BizFeaturesSec.vue';
+import TestimonialsSec from './components/TestimonialsSec.vue';
+import PostsSec from './components/PostsSec.vue';
+import ContactFormSec from './components/ContactFormSec.vue';
+import FooterSb from './components/FooterSb.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderSb,
+    Herosb,
+    GridCardsSec,
+    TipsTricksSec,
+    BizFeaturesSec,
+    TestimonialsSec,
+    PostsSec,
+    ContactFormSec,
+    FooterSb,
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "@/assets/styles/style.scss";
 </style>
