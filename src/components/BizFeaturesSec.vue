@@ -10,7 +10,7 @@
               <button>Explore More Feature</button>
           </div>
           <div class="grid-cards">
-              <CardFeature title="Customized Invoices" img="../assets/img/feat-1.png"/>
+              <CardFeature v-for="card in arrFeatCards" :key="card.title" :card-data="card"/>
           </div>
       </div>
   </section>
@@ -23,6 +23,44 @@ export default {
     name: 'BizFeaturesSec',
     components: {
         CardFeature,
+    },
+    data() {
+        return {
+            arrFeatCards: [
+                {
+                    title: 'Customized Invoices',
+                    srcImg: require('../assets/img/feat-1.png')
+                },
+                {
+                    title: 'Stock Management',
+                    srcImg: require('../assets/img/feat-2.png')
+                },
+                {
+                    title: 'Receivable & Payables',
+                    srcImg: require('../assets/img/feat-3.png')
+                },
+                {
+                    title: 'Manage Buying',
+                    srcImg: require('../assets/img/feat-4.png')
+                },
+                {
+                    title: 'Powerful & Secure',
+                    srcImg: require('../assets/img/feat-5.png')
+                },
+                {
+                    title: 'Fastest Return Filing',
+                    srcImg: require('../assets/img/feat-3.png')
+                },
+                {
+                    title: 'Monthly Detailed',
+                    srcImg: require('../assets/img/feat-6.png')
+                },
+                {
+                    title: 'Product Management',
+                    srcImg: require('../assets/img/feat-7.png')
+                },
+            ],
+        };
     }
 }
 </script>
@@ -33,12 +71,21 @@ export default {
     min-height: 653px;
     img {
         position: absolute;
-        left: -325px;
+        left: -360px;
     }
 
     .header-group {
         display: flex;
         align-items: center;
+    }
+
+    .grid-cards {
+        display: flex;
+        flex-wrap: wrap;
+
+        & > * {
+            width: calc(100% / 4);
+        }
     }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>  
     <div>
-        <h1>{{ title }}</h1>
-        <img :src="{img}" :alt="title">
+        <h1>{{ cardData.title }}</h1>
+        <img :src="cardData.srcImg" :alt="cardData.title">
     </div>
 </template>
 
@@ -9,8 +9,7 @@
 export default {
     name: 'CardFeature',
     props: {
-        title: String,
-        img: String,
+        cardData: Object,
     }
 }
 </script>

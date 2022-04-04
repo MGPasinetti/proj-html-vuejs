@@ -5,9 +5,11 @@
     <GridCardsSec />
     <TipsTricksSec />
     <BizFeaturesSec />
-    <TestimonialsSec />
-    <ContactFormSec />
-    <PostsSec />
+    <div class="big-sec">
+      <TestimonialsSec />
+      <ContactFormSec />
+      <PostsSec />
+    </div>
     <FooterSb />
   </div>
 </template>
@@ -41,5 +43,7 @@ export default {
 
 <style lang="scss">
 @import "@/assets/styles/style.scss";
-
+#app > * {
+  margin-bottom: 4rem;
+}
 </style>
