@@ -23,6 +23,10 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
 </style>

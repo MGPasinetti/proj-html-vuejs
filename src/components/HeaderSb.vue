@@ -26,6 +26,15 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  div:last-child {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 </style>
