@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="testimonial-sec">
     <div class="big-sec">
       <img src="../assets/img/15.png" alt="">
       <div class="container-sec">
@@ -61,6 +61,7 @@ export default {
         flex-direction: column;
         align-items: center;
         background-color: transparent;
+        min-height: 280px;
 
         .testimonials-grid {
             display: flex;

@@ -1,10 +1,10 @@
 <template>
-  <section>
+  <section class="post-sec">
       <div class="container-sec">
             <h1>Latest Posts</h1>
             <small>If you are planning on developing a product landing.</small>
             <div class="posts-grid">
-                <CardPost v-for="post in arrPosts" :key="post.srcImg" :card-data="post"/>
+                <CardPost class="card-post" v-for="post in arrPosts" :key="post.srcImg" :post-data="post"/>
             </div>
       </div>
   </section>
@@ -23,21 +23,21 @@ export default {
             arrPosts: [
                 {
                     srcImg: require('../assets/img/19.jpg'),
-                    name: 'Julia Aann',
-                    role: 'COO Sofbox',
-                    msg: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.' 
+                    date: 'November 28, 2019',
+                    title: 'Life Lack Meaning',
+                    text: 'It is a long established fact that a reader will be distracted by the readable.' 
                 },
                 {
                     srcImg: require('../assets/img/18.jpg'),
-                    name: 'Mac Znder',
-                    role: 'Manager Sofbox',
-                    msg: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.' 
+                    date: 'November 29, 2019',
+                    title: 'Life Lack Meaning',
+                    text: 'It is a long established fact that a reader will be distracted by the readable.' 
                 },
                 {
                     srcImg: require('../assets/img/17.jpg'),
-                    name: 'Max Fletcher',
-                    role: 'IT-Manager Sofbox',
-                    msg: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.' 
+                    date: 'November 30, 2019',
+                    title: 'Life Lack Meaning',
+                    text: 'It is a long established fact that a reader will be distracted by the readable.' 
                 },
             ],
         };
@@ -46,5 +46,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.container-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    .posts-grid {
+        display: flex;
+        flex-wrap: wrap;
+
+        .card-post {
+            width: calc(100% / 3);
+        }
+    }
+}
 </style>
