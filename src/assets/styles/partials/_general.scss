@@ -20,6 +20,10 @@ h2 {
 	font-size: 30px;
 }
 
+h3 {
+	margin-bottom: .7rem;
+}
+
 ul {
 	height: 100%;
 	list-style: none;
@@ -45,8 +49,10 @@ button {
 
 small {
 	font-size: 14px;
+	font-weight: 400;
 	color: $txt_color_grey;
 	margin-bottom: 3rem;
+	line-height: 1.5;
 }
 
 nav li {
@@ -54,7 +60,7 @@ nav li {
 	border-bottom: 2px solid transparent;
 }
 
-li:hover {
+nav li:hover {
 	border-bottom: 2px solid $border_color_blue;
 
 	& a {
@@ -72,9 +78,14 @@ li:hover {
 
 .container-sec {
 	max-width: 900px;
-	height: 4rem;
 	background-color: $bkg_color_white;
 	margin: 0 auto;
+	margin-bottom: 8rem;
+}
+
+.fa-check {
+	color: $txt_color_blue;
+	margin-right: 1rem;
 }
 
 

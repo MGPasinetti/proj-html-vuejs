@@ -70,7 +70,7 @@ export default {
 
 .features-sec {
     position: relative;
-    min-height: 653px;
+    
     img {
         position: absolute;
         left: -360px;

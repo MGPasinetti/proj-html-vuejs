@@ -41,7 +41,4 @@ export default {
 
 <style lang="scss">
 @import "./assets/styles/style.scss";
-// #app > * {
-//   margin-bottom: 4rem;
-// }
 </style>

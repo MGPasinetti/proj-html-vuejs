@@ -29,7 +29,7 @@ export default {
   background-color: $bkg_color_lilla;
   padding: 3rem;
   border-radius: 5px;
-  margin-bottom: 7rem;
+  margin-bottom: 10rem;
 
   & :first-child {
     @include col-layout;

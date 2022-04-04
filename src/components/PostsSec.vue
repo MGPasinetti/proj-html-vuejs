@@ -52,7 +52,6 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 310px;
 
     .posts-grid {
         display: flex;

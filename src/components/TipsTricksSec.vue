@@ -38,7 +38,6 @@ export default {
 
 .tips-tricks-sec {
     display: flex;
-    min-height: 200px;
 
     .tips-card {
         display: flex;

@@ -22,6 +22,5 @@ export default {
 
 .grid-cards {
   display: flex;
-  min-height: 130px;
 }
 </style>

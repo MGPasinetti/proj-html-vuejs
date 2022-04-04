@@ -61,7 +61,6 @@ export default {
         flex-direction: column;
         align-items: center;
         background-color: transparent;
-        min-height: 280px;
 
         .testimonials-grid {
             display: flex;
