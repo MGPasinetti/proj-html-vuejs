@@ -1,15 +1,24 @@
 <template>
-  <section class="grid-cards">
-    
+  <section class="container-sec grid-cards">
+    <CardMarketing />
+    <CardMarketing />
+    <CardMarketing />
   </section>
 </template>
 
 <script>
+import CardMarketing from './CardMarketing.vue';
+
 export default {
   name: 'GridCardsSec',
+  components: {
+    CardMarketing,
+  }
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+.grid-cards {
+  display: flex;
+}
 </style>
