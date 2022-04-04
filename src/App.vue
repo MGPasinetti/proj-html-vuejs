@@ -6,8 +6,8 @@
     <TipsTricksSec />
     <BizFeaturesSec />
     <TestimonialsSec />
-    <ContactFormSec />
     <PostsSec />
+    <ContactFormSec />
     <FooterSb />
   </div>
 </template>
