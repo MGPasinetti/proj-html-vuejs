@@ -1,25 +1,10 @@
 <template>
     <section class="container-sec tips-tricks-sec">
       <!-- COL-1 -->
-      <div>
+      <div class="col">
             <h2>Get tips tricks on how to skyrocket your sales.</h2>
             <small>Faff about only a quid blower I don't want no agro bleeding chimney pot burke tosser cras nice one boot fanny.!</small>
-            <div>
-                <div class="tips-card">
-                    <img src="../assets/img/510.png" alt="">
-                    <div>
-                        <h4>Reporting Analysis</h4>
-                        <small>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</small>
-                    </div>
-                </div>
-                <div class="tips-card">
-                    <img src="../assets/img/511.png" alt="">
-                    <div>
-                        <h4>Technical SEO Audit</h4>
-                        <small>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</small>
-                    </div>
-                </div>
-            </div>
+            <CardTips v-for="tip in arrTips" :key="tip.title" :tip-data="tip"/>
       </div>
 
       <!-- COL-2 -->
@@ -28,8 +13,29 @@
 </template>
 
 <script>
+import CardTips from './CardTips.vue';
+
 export default {
     name: 'TipsTricksSec',
+    components: {
+        CardTips,
+    },
+    data() {
+        return {
+            arrTips: [
+                {
+                    srcImg: require('../assets/img/510.png'),
+                    title: 'Reporting Analysis',
+                    txt: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
+                },
+                {
+                    srcImg: require('../assets/img/511.png'),
+                    title: 'Technical SEO Audit',
+                    txt: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
+                },
+            ],
+        };
+    },
 }
 </script>
 
@@ -37,10 +43,19 @@ export default {
 @import "../assets/styles/style.scss";
 
 .tips-tricks-sec {
-    display: flex;
+    @include flex-layout($justify: space-between, $align: none, $wrap: nowrap);
+    gap: 2rem;
 
-    .tips-card {
-        display: flex;
+    & > * {
+        flex: 0 0 40%
     }
+
+   .col {
+       @include col-layout;
+   }
+
+   img {
+       max-width: 500px;
+   }
 }
 </style>
