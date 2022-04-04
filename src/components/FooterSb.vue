@@ -6,7 +6,7 @@
             <small>It is a long established fact that a reader will be distracted by the readable content.</small>
             <small>Copyright @ <a href="#">Sofbox</a></small>
         </div>
-        <div class="col" v-for="list in arrLists" :key="list">
+        <div class="col" v-for="(list, index) in arrLists" :key="index">
             <ListFooter :list-data="list"/>
         </div>
       </div>

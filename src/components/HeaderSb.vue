@@ -8,8 +8,8 @@
     <!-- NAVBAR + SEARCH-i + SHOP-i + BUTTON -->
     <div>
       <NavbarHeader />
-      <i class="fa-solid fa-magnifying-glass"></i>
-      <i class="fa-solid fa-cart-shopping"></i> <!-- + number items rounded -->
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> <!-- + number items rounded -->
       <button>Get Started</button>
     </div>
   </header>
