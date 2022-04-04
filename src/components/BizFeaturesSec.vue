@@ -4,7 +4,7 @@
       <div class="container-sec">
           <div class="header-group">
               <div>
-                    <h1>Popular features that your business needs</h1>
+                    <h2>Popular features that your business needs</h2>
                     <small>Faff about only a quid blower I don't want no agro bleeding chimney pot burke tosser cras nice one boot fanny.!</small>
               </div>
               <button>Explore More Feature</button>
@@ -66,6 +66,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/styles/style.scss";
+
 .features-sec {
     position: relative;
     min-height: 653px;

@@ -1,7 +1,7 @@
 <template>
   <section class="post-sec">
       <div class="container-sec">
-            <h1>Latest Posts</h1>
+            <h2>Latest Posts</h2>
             <small>If you are planning on developing a product landing.</small>
             <div class="posts-grid">
                 <CardPost class="card-post" v-for="post in arrPosts" :key="post.srcImg" :post-data="post"/>
@@ -46,6 +46,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/styles/style.scss";
+
 .container-sec {
     display: flex;
     flex-direction: column;

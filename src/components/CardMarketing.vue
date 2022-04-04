@@ -7,7 +7,7 @@
       
       <!-- COL-2 -->
       <div>
-          <h1>Online Marketing</h1>
+          <h3>Online Marketing</h3>
           <small>Is is a long established fact that a reader will be distracted.</small>
           <ul>
               <li>SEO</li>
@@ -26,6 +26,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/styles/style.scss";
+
 .card {
     display: flex;
 }

@@ -1,8 +1,8 @@
 <template>
   <dir>
-      <h1>{{ listData.title }}</h1>
+      <h3>{{ listData.title }}</h3>
       <ul>
-        <li v-for="link in listData.arrLinks" :key="link">{{ link }}</li>
+        <li v-for="link in listData.arrLinks" :key="link"><a href="#">{{ link }}</a></li>
       </ul>
   </dir>
 </template>
@@ -16,6 +16,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import "../assets/styles/style.scss";
 
 </style>

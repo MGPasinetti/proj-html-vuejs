@@ -1,6 +1,6 @@
 <template>  
     <div>
-        <h1>{{ cardData.title }}</h1>
+        <h6>{{ cardData.title }}</h6>
         <img :src="cardData.srcImg" :alt="cardData.title">
     </div>
 </template>
@@ -15,5 +15,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/styles/style.scss";
 
 </style>

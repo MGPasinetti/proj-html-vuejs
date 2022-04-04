@@ -1,7 +1,7 @@
 <template>
   <section class="contact-form-sec">
       <div class="container-sec">
-            <h1>Contact with our team</h1>
+            <h2>Contact with our team</h2>
             <small>If you are planning on developing a product landing.</small>
             <div>
                 <!-- COL-LEFT -->
@@ -19,7 +19,7 @@
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                     <form action="" class="form-group">
-                        <h1>Get in Touch</h1>
+                        <h3>Get in Touch</h3>
                         <div class="name-mail">
                             <input type="text" placeholder="Your Name">
                             <input type="text" placeholder="Your Email">

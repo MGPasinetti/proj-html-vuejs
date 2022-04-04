@@ -21,6 +21,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/styles/style.scss";
+
 .hero-sec {
   max-width: 1100px;
   margin: 0 auto;

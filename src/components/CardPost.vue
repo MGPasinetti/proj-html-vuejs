@@ -2,7 +2,7 @@
   <div class="post">
       <img :src="postData.srcImg" :alt="postData.title">
       <span>{{ postData.date }}</span>
-      <h1>{{ postData.title }}</h1>
+      <h5>{{ postData.title }}</h5>
       <p>{{ postData.text }}</p>
   </div>
 </template>
@@ -17,6 +17,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/styles/style.scss";
+
 .post {
     padding: .5rem;
     position: relative;

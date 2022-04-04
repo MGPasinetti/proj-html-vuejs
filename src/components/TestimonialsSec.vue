@@ -3,7 +3,7 @@
     <div class="big-sec">
       <img src="../assets/img/15.png" alt="">
       <div class="container-sec">
-            <h1>Our Testimonials</h1>
+            <h2>Our Testimonials</h2>
             <small>If you are planning on developing a product landing app or website, take a look at this beautiful-cafted</small>
             <div class="testimonials-grid">
                 <CardTestimonial v-for="card in arrTestimonials" :key="card.name" :card-data="card"/>
