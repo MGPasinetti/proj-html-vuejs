@@ -43,19 +43,16 @@ export default {
 @import "../assets/styles/style.scss";
 
 .tips-tricks-sec {
-    @include flex-layout($justify: space-between, $align: none, $wrap: nowrap);
-    gap: 2rem;
-
-    & > * {
-        flex: 0 0 40%
-    }
+    @include flex-layout($justify: space-between, $align: center, $wrap: nowrap);
+    gap: 1rem;
 
    .col {
        @include col-layout;
+        flex: 0 0 51%;
    }
 
    img {
-       max-width: 500px;
+       max-height: 350px;
    }
 }
 </style>

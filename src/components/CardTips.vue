@@ -23,6 +23,7 @@ export default {
     gap: 1rem;
     padding: 1.5rem 1rem;
     border: 1px solid lightgrey;
+    margin-bottom: 1rem;
 
     img {
         flex: 0 0 10%;
