@@ -47,11 +47,15 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 500px;
+    min-height: 450px;
 
     div {
         display: flex;
         width: 100%;
+
+        img {
+            width: 500px;
+        }
 
         .contact-col {
             display: flex;
