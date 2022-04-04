@@ -10,7 +10,7 @@
       <NavbarHeader />
       <div class="icons">
         <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-        <a href="#"><i class="fa-solid fa-cart-shopping"></i><span>0</span></a> <!-- + number items rounded -->
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i><span>0</span></a>
       </div>
       <button>Get Started</button>
     </div>

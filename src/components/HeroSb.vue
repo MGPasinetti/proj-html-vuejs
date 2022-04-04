@@ -8,9 +8,7 @@
       </div>
 
       <!-- COL-2 positioned -->
-      <div>
-        <img src="../assets/img/27-1.png" alt="hero image">
-      </div>
+      <img src="../assets/img/27-1.png" alt="hero image">
   </section>
 </template>
 
@@ -25,7 +23,24 @@ export default {
 
 .hero-sec {
   max-width: 1100px;
+  height: 400px;
   margin: 0 auto;
   display: flex;
+  background-color: $bkg_color_lilla;
+  padding: 3rem;
+  border-radius: 5px;
+
+  & :first-child {
+    @include col-layout;
+    margin-bottom: 1rem;
+
+    & button {
+      width: fit-content;
+    }
+  }
+
+  & :last-child {
+    width: 50%;
+  }  
 }
 </style>
