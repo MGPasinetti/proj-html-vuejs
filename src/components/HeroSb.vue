@@ -29,18 +29,22 @@ export default {
   background-color: $bkg_color_lilla;
   padding: 3rem;
   border-radius: 5px;
+  margin-bottom: 7rem;
 
   & :first-child {
     @include col-layout;
     margin-bottom: 1rem;
+    flex: 0 0 40%;
+    min-width: 430px;
 
     & button {
-      width: fit-content;
+      height: fit-content;
     }
   }
 
   & :last-child {
-    width: 50%;
+    flex-shrink: 1;
+    height: 390px;
   }  
 }
 </style>

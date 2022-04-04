@@ -31,8 +31,9 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/styles/style.scss";
 
-header {
+header.container-sec {
   @include flex-layout;
+  margin-bottom: .7rem;
 
   div:last-child {
     flex: 0 0 65%;

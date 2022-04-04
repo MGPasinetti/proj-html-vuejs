@@ -44,7 +44,7 @@ button {
 }
 
 small {
-	font-size: 12px;
+	font-size: 14px;
 	color: $txt_color_grey;
 	margin-bottom: 3rem;
 }
@@ -52,6 +52,14 @@ small {
 nav li {
 	height: 100%;
 	border-bottom: 2px solid transparent;
+}
+
+li:hover {
+	border-bottom: 2px solid $border_color_blue;
+
+	& a {
+		color: $txt_color_blue;
+	}
 }
 
 // UTILITY CLASSES
@@ -69,11 +77,4 @@ nav li {
 	margin: 0 auto;
 }
 
-li:hover {
-	border-bottom: 2px solid $border_color_blue;
-
-	& a {
-		color: $txt_color_blue;
-	}
-}
 
