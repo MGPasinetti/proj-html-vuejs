@@ -18,6 +18,7 @@ h2 {
 }
 
 ul {
+	height: 100%;
 	list-style: none;
 }
 
@@ -44,6 +45,11 @@ small {
 	color: $txt_color_grey;
 }
 
+nav li {
+	height: 100%;
+	border-bottom: 2px solid transparent;
+}
+
 // UTILITY CLASSES
 .container {
 	max-width: 1100px;
@@ -58,3 +64,12 @@ small {
 	background-color: $bkg_color_white;
 	margin: 0 auto;
 }
+
+li:hover {
+	border-bottom: 2px solid $border_color_blue;
+
+	& a {
+		color: $txt_color_blue;
+	}
+}
+

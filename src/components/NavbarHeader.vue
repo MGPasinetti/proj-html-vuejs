@@ -26,9 +26,12 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/styles/style.scss";
 
-ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
+nav {
+    line-height: 35.9px;
+
+    ul {
+        @include flex-layout;
+        gap: 1.5rem;
+    }
 }
 </style>

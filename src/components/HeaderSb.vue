@@ -8,8 +8,10 @@
     <!-- NAVBAR + SEARCH-i + SHOP-i + BUTTON -->
     <div>
       <NavbarHeader />
-      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-      <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> <!-- + number items rounded -->
+      <div class="icons">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i><span>0</span></a> <!-- + number items rounded -->
+      </div>
       <button>Get Started</button>
     </div>
   </header>
@@ -30,13 +32,29 @@ export default {
 @import "../assets/styles/style.scss";
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-layout;
 
   div:last-child {
-    display: flex;
-    justify-content: space-between;
+    flex: 0 0 65%;
+    @include flex-layout;
+
+    .icons {
+      & .fa-magnifying-glass{
+        margin-right: 1.5rem;
+      }
+
+      a:last-child span {
+        padding: .2rem .4rem;
+        line-height: 1;
+        background-color: rgba($bkg_color_blue, .8);
+        color: $txt_color_white;
+        font-size: 9px;
+        border-radius: 20rem;
+        position: relative;
+        top: -10px;
+        left: -6px;
+      }
+    }
   }
 }
 </style>

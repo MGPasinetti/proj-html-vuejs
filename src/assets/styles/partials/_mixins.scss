@@ -1,4 +1,4 @@
-@mixin flex-layout($justify: center, $align: center, $wrap: nowrap) {
+@mixin flex-layout($justify: space-between, $align: center, $wrap: wrap) {
 	display: flex;
 	justify-content: $justify;
 	align-items: $align;
