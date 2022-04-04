@@ -20,5 +20,6 @@ export default {
 <style lang="scss" scoped>
 .grid-cards {
   display: flex;
+  min-height: 130px;
 }
 </style>

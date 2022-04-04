@@ -24,5 +24,6 @@ export default {
 .hero-sec {
   max-width: 1100px;
   margin: 0 auto;
+  display: flex;
 }
 </style>
