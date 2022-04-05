@@ -4,7 +4,7 @@
       <div class="col">
             <h2>Get tips tricks on how to skyrocket your sales.</h2>
             <small>Faff about only a quid blower I don't want no agro bleeding chimney pot burke tosser cras nice one boot fanny.!</small>
-            <CardTips class="tips-card" v-for="(tip, index) in arrTips" :key="index" :tip-data="(tip)" @click="setActiveTip(index)" :class="{active: index == activeTip}" />
+            <CardTips class="tips-card" v-for="(tip, index) in arrTips" :key="index" :tip-data="(tip)" />
       </div>
 
       <!-- COL-2 -->
@@ -37,11 +37,6 @@ export default {
             ],
         };
     },
-    methods: {
-        setActiveTip (index) {
-            this.activeTip = index;
-        },
-    }
 }
 </script>
 
@@ -60,13 +55,5 @@ export default {
        max-height: 350px;
    }
 
-}
-.tips-card.active {
-    border: 1px solid $border_color_whitesmoke2; 
-    box-shadow: 6px 14px 28px 0px #cfcece;
-    
-    h4 {
-        color: $txt_color_blue;
-    }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="tips-card">
+    <div class="tips-card" @click="setActiveTip" :class="{active: activeTip}">
         <img :src="tipData.srcImg" :alt="tipData.title">
         <div>
             <h4>{{ tipData.title }}</h4>
@@ -13,6 +13,16 @@ export default {
     name: 'CarTips',
     props: {
         tipData: Object,
+    },
+    data() {
+        return {
+            activeTip: false,
+        };
+    },
+    methods: {
+        setActiveTip() {
+            return this.activeTip = !this.activeTip;
+        },
     }
 }
 </script>
@@ -33,13 +43,22 @@ export default {
         height: 3rem;
     }
 
-    // &:hover {
-    //     border: 1px solid $border_color_whitesmoke2; 
-    //     box-shadow: 6px 14px 28px 0px #cfcece;
+    &:hover {
+        border: 1px solid $border_color_whitesmoke2; 
+        box-shadow: 6px 14px 28px 0px #cfcece;
         
-    //     h4 {
-    //         color: $txt_color_blue;
-    //     }
-    // }
+        h4 {
+            color: $txt_color_blue;
+        }
+    }
+
+    &.active {
+        border: 1px solid $border_color_whitesmoke2; 
+        box-shadow: 6px 14px 28px 0px #cfcece;
+        
+        h4 {
+            color: $txt_color_blue;
+        }
+    }
 }
 </style>
