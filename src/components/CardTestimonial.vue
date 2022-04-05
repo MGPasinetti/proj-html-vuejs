@@ -55,17 +55,9 @@ export default {
       position: absolute;
       top: 4rem;
       font-size: 180px;
-      color: rgba(128, 128, 128, .2);
+      color: rgba(128, 128, 128, .1);
       transform: rotateY(180deg);
     }
-  
-    p {
-      font-size: 14px;
-      font-weight: 400;
-      color: $txt_color_grey;
-      line-height: 1.5;
-    }
-  
   }
   
   .stack-cards {

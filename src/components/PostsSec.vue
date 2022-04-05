@@ -1,6 +1,6 @@
 <template>
   <section class="post-sec">
-      <div class="container-sec">
+      <div class="container-sec jumbotron">
             <div class="header-sec">
                 <h2>Latest Posts</h2>
                 <small>If you are planning on developing a product landing.</small>
@@ -51,16 +51,16 @@ export default {
 @import "../assets/styles/style.scss";
 
 .container-sec {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: -8rem;
+    @include col-layout($direction: column, $align: center);
 
     .posts-grid {
         display: flex;
         flex-wrap: wrap;
+        gap: 1.5rem;
 
         .card-post {
-            width: calc(100% / 3);
+            width: calc((100% - 3rem) / 3);
         }
     }
 }

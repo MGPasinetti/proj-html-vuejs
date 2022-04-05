@@ -1,6 +1,6 @@
 <template>
   <section class="contact-form-sec">
-      <div class="container-sec">
+      <div class="container-sec jumbotron">
             <div class="header-sec">
                 <h2>Contact with our team</h2>
                 <small>If you are planning on developing a product landing.</small>

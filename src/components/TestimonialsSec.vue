@@ -2,7 +2,7 @@
   <section class="testimonial-sec">
     <div class="big-sec">
       <img src="../assets/img/15.png" alt="">
-      <div class="container-sec">
+      <div class="container-sec jumbotron">
             <div class="header-sec">
                 <h2>Our Testimonials</h2>
                 <small>If you are planning on developing a product landing app or website, take a look at this beautiful-cafted</small>

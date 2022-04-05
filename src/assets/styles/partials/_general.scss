@@ -60,6 +60,13 @@ small {
 	line-height: 1.5;
 }
 
+p {
+	font-size: 14px;
+	font-weight: 400;
+	color: $txt_color_grey;
+	line-height: 1.5;
+}
+
 nav li {
 	height: 100%;
 	border-bottom: 2px solid transparent;
@@ -99,5 +106,6 @@ nav li:hover {
 	text-align: center;
 	margin-bottom: 5rem;
 }
+
 
 
