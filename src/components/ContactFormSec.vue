@@ -7,11 +7,17 @@
             </div>
             <div>
                 <!-- COL-LEFT -->
-                <img src="../assets/img/StaticMapService.GetMapIma.png" alt="map">
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="450" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=san%20francisco%20california%2094129%20storey%20ave&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <a href="https://123movies-to.org"></a>
+                        <a href="https://www.embedgooglemap.net"></a>
+                    </div>
+                </div>
 
                 <!-- COL-RIGHT -->
                 <div class="contact-col">
-                    <img src="../assets/img/35.png" alt="SofBox logo">
+                    <img class="logo" src="../assets/img/35.png" alt="SofBox logo">
                     <span>9840 Shore St. Fond Du Lac, WI 54935</span>
                     <small>0 1223 456 789 <br> mail@sofbox.com</small>
                     <div class="social-icons">
@@ -46,29 +52,66 @@ export default {
 @import "../assets/styles/style.scss";
 
 .container-sec {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include col-layout($direction: column, $align: center);
 
     div:last-child {
         display: flex;
         width: 100%;
+        gap: .5rem;
 
-        img {
-            width: 500px;
+        // COL-LEFT
+        .mapouter {
+            position:relative;
+            text-align:right;
+            height: 350px;
+            width: 450px;
+
+            .gmap_canvas {
+                overflow:hidden;
+                background:none!important;
+                height: 350px;
+                width: 450px;
+            }
         }
 
+        // COL-RIGHT
         .contact-col {
             display: flex;
             flex-direction: column;
 
+
             img {
-                width: 8rem;
+                width: 6rem;
+                margin-bottom: 2rem;
             }
 
-            .social-icons i {
-                color: $txt_color_blue;
+            span {
+                font-weight: 400;
+                font-size: 16px;
+                margin-bottom: 1rem;
             }
+
+            
+            .social-icons {
+                margin-top: -1rem;
+                display: flex;
+                gap: .3rem;
+                margin-bottom: 1.5rem;
+
+                a {
+                    width: 25px;
+                    height: 25px;
+                    @include flex-layout($justify: center, $align: center, $wrap: wrap);
+                    border: 1px solid $border_color_whitesmoke2;
+                    border-radius: 3px;
+
+                    i {
+                        color: $txt_color_blue;
+                        font-size: 12px;
+                    }
+                }
+            } 
+                
 
             .form-group {
                 display: flex;

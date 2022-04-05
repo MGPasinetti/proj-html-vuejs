@@ -2,7 +2,7 @@
   <div class="card">
     <div class="card inner">
       <img :src="cardData.srcImg" :alt="cardData.name">
-      <span><strong>{{ cardData.name }}</strong> - <small>{{ cardData.role }}</small></span>
+      <span>{{ cardData.name }} - <small>{{ cardData.role }}</small></span>
       <i class="fa-solid fa-quote-right"></i>
       <p>{{ cardData.msg }}</p>
     </div>
@@ -45,6 +45,7 @@ export default {
   
     span {
       margin-bottom: 2rem;
+      font-weight: 500;
   
       small {
         font-size: 12px;
