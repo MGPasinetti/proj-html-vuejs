@@ -35,6 +35,7 @@ div {
         border: 1px solid $bkg_color_lightgreen;
         box-shadow: 6px 14px 28px 0px $bkg_color_lightgreen;
         color: white;
+        cursor: pointer;
     }
 }
 
