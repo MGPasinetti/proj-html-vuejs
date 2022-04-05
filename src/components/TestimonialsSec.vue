@@ -10,7 +10,7 @@
             <div class="testimonials-grid">
                 <CardTestimonial v-for="card in arrTestimonials" :key="card.name" :card-data="card"/>
             </div>
-            <div class="square-group" @click="">
+            <div class="square-group" @click="scrollCards">
                 <div class="first-square"></div>
                 <div class="second-square"></div>
             </div>
@@ -53,6 +53,12 @@ export default {
                 },
             ],
         };
+    },
+    methods: {
+        scrollCards() {
+            this.arrTestimonials[0].visible = !this.arrTestimonials[0].visible;
+            this.arrTestimonials[this.arrTestimonials.length - 1].visible = !this.arrTestimonials[this.arrTestimonials.length - 1].visible;
+        }
     }
 }
 </script>
