@@ -34,6 +34,7 @@ export default {
 header.container-sec {
   @include flex-layout;
   margin-bottom: .7rem;
+  padding-top: .5rem;
 
   div:last-child {
     flex: 0 0 65%;

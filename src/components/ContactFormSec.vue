@@ -33,7 +33,7 @@
                             <input type="email" placeholder="Your Email">
                         </div>
                         <input type="text" placeholder="Your Subject">
-                        <input type="text" placeholder="Your Message">
+                        <textarea name="message" form="usrform" placeholder="Your Message"></textarea>
                         <button>Send Message</button>
                     </form>
                 </div>
@@ -114,8 +114,40 @@ export default {
                 
 
             .form-group {
-                display: flex;
-                flex-direction: column;
+                @include col-layout($direction: column, $align: flex-start);
+                gap: 1.5rem;
+
+                h3 {
+                    margin-bottom: -.5rem;
+                }
+
+                .name-mail {
+                    width: 100%;
+                    @include flex-layout($justify: space-between, $align: center, $wrap: nowrap);
+                    gap: 1.5rem;
+
+                    input {
+                        flex-grow: 1;
+                    }
+                }
+
+                input {
+                    padding: .5rem;
+                    font-size: 12px;
+                    width: 100%;
+                    border: 1px solid $border_color_whitesmoke2;
+                    border-radius: 3px;
+                }
+
+                textarea {
+                    padding: .5rem;
+                    font-size: 12px;
+                    width: 100%;
+                    height: 150px;
+                    border: 1px solid $border_color_whitesmoke2;
+                    border-radius: 3px;
+                }
+
             }
         }
     }
