@@ -44,7 +44,7 @@ export default {
 
 .tips-tricks-sec {
     @include flex-layout($justify: space-between, $align: center, $wrap: nowrap);
-    gap: 1rem;
+    // gap: 1rem;
 
    .col {
        @include col-layout;

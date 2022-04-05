@@ -22,7 +22,7 @@
                         <h3>Get in Touch</h3>
                         <div class="name-mail">
                             <input type="text" placeholder="Your Name">
-                            <input type="text" placeholder="Your Email">
+                            <input type="email" placeholder="Your Email">
                         </div>
                         <input type="text" placeholder="Your Subject">
                         <input type="text" placeholder="Your Message">
