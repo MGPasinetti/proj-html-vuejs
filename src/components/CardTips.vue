@@ -13,7 +13,7 @@ export default {
     name: 'CarTips',
     props: {
         tipData: Object,
-    },
+    }
 }
 </script>
 
@@ -26,19 +26,20 @@ export default {
     gap: 1rem;
     padding: 1.5rem 1rem;
     border: 1px solid transparent;
+    cursor: pointer;
 
     img {
         flex: 0 0 10%;
         height: 3rem;
     }
 
-    &:hover {
-        border: 1px solid $border_color_whitesmoke2; 
-        box-shadow: 6px 14px 28px 0px #cfcece;
+    // &:hover {
+    //     border: 1px solid $border_color_whitesmoke2; 
+    //     box-shadow: 6px 14px 28px 0px #cfcece;
         
-        h4 {
-            color: $txt_color_blue;
-        }
-    }
+    //     h4 {
+    //         color: $txt_color_blue;
+    //     }
+    // }
 }
 </style>
