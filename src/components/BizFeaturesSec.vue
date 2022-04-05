@@ -5,7 +5,7 @@
           <div class="header-group">
               <div>
                     <h2>Popular features that your business needs</h2>
-                    <small>Faff about only a quid blower I don't want no agro bleeding chimney pot burke tosser cras nice one boot fanny.!</small>
+                    <small>Faff about only a quid blower I don't want no agro bleeding chimney <br> pot burke tosser cras nice one boot fanny.!</small>
               </div>
               <button>Explore More Feature</button>
           </div>
@@ -72,21 +72,36 @@ export default {
     position: relative;
     
     img {
+        height: calc(392px + 8rem);
         position: absolute;
-        left: -360px;
+        left: -250px;
+        top: -8rem;
+        z-index: -1;
     }
 
-    .header-group {
-        display: flex;
-        align-items: center;
-    }
+    .container-sec {
+    background-color: transparent;
 
-    .grid-cards {
-        display: flex;
-        flex-wrap: wrap;
+        .header-group {
+            @include flex-layout;
+            margin-bottom: 3rem;
 
-        & > * {
-            width: calc(100% / 4);
+            div {
+                flex: 0 0 70%;
+            }
+
+            button {
+                margin: 2rem;
+            }
+        }
+
+        .grid-cards {
+            @include flex-layout;
+            gap: 1.5rem;
+
+            & > * {
+                width: calc((100% - 4.5rem) / 4);
+            }
         }
     }
 }

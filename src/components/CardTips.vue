@@ -34,7 +34,7 @@ export default {
 
     &:hover {
         border: 1px solid $border_color_whitesmoke2; 
-        box-shadow: 10px 14px 28px 0px #cfcece;
+        box-shadow: 6px 14px 28px 0px #cfcece;
         
         h4 {
             color: $txt_color_blue;
