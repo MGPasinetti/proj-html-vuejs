@@ -11,8 +11,14 @@
                 <CardTestimonial v-for="card in arrTestimonials" :key="card.name" :card-data="card"/>
             </div>
             <div class="square-group" @click="scrollCards">
-                <div class="first-square"></div>
-                <div class="second-square"></div>
+                <div v-if="activeTestimonial">
+                    <div class="first-square"></div>
+                    <div class="second-square"></div>
+                </div>
+                <div v-else>
+                    <div class="second-square"></div>
+                    <div class="first-square"></div>
+                </div>
             </div>
       </div>
     </div>
@@ -29,6 +35,7 @@ export default {
     },
     data() {
         return {
+            activeTestimonial: true,
             arrTestimonials: [
                 {
                     srcImg: require('../assets/img/26.jpeg'),
@@ -58,6 +65,7 @@ export default {
         scrollCards() {
             this.arrTestimonials[0].visible = !this.arrTestimonials[0].visible;
             this.arrTestimonials[this.arrTestimonials.length - 1].visible = !this.arrTestimonials[this.arrTestimonials.length - 1].visible;
+            this.activeTestimonial = !this.activeTestimonial;
         }
     }
 }
@@ -82,22 +90,24 @@ export default {
         }
 
         .square-group {
-            display: flex;
-            gap: .3rem;
-            cursor: pointer;
-
-            .first-square {
-                width: .5rem;
-                height: .5rem;
-                background-color: $bkg_color_blue;
-                border-radius: 2px;
-            }
-
-            .second-square {
-                width: .5rem;
-                height: .5rem;
-                background-color:$bkg_color_black;
-                border-radius: 2px;
+            div {
+                display: flex;
+                gap: .3rem;
+                cursor: pointer;
+    
+                .first-square {
+                    width: .5rem;
+                    height: .5rem;
+                    background-color: $bkg_color_blue;
+                    border-radius: 2px;
+                }
+    
+                .second-square {
+                    width: .5rem;
+                    height: .5rem;
+                    background-color:$bkg_color_black;
+                    border-radius: 2px;
+                }
             }
         }
     }
