@@ -10,9 +10,9 @@
             <div class="testimonials-grid">
                 <CardTestimonial v-for="card in arrTestimonials" :key="card.name" :card-data="card"/>
             </div>
-            <div class="square-group" style="display: flex; gap: .3rem;">
-                <div class="first-square" style="width: .5rem; height: .5rem; background-color: #377DFF; border-radius: 2px;"></div>
-                <div class="second-square" style="width: .5rem; height: .5rem; background-color: black; border-radius: 2px;"></div>
+            <div class="square-group" @click="">
+                <div class="first-square"></div>
+                <div class="second-square"></div>
             </div>
       </div>
     </div>
@@ -34,20 +34,23 @@ export default {
                     srcImg: require('../assets/img/26.jpeg'),
                     name: 'Julia Aann',
                     role: 'COO Sofbox',
-                    msg: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.' 
+                    msg: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.',
+                    visible: true, 
                 },
                 {
                     srcImg: require('../assets/img/27.jpeg'),
                     name: 'Mac Znder',
                     role: 'Manager Sofbox',
-                    msg: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.' 
+                    msg: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.',
+                    visible: true,  
                 },
-                // {
-                //     srcImg: require('../assets/img/25.jpeg'),
-                //     name: 'Max Fletcher',
-                //     role: 'IT-Manager Sofbox',
-                //     msg: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.' 
-                // },
+                {
+                    srcImg: require('../assets/img/25.jpeg'),
+                    name: 'Max Fletcher',
+                    role: 'IT-Manager Sofbox',
+                    msg: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.',
+                    visible: false, 
+                },
             ],
         };
     }
@@ -70,6 +73,26 @@ export default {
             display: flex;
             gap: 3rem;
             margin-bottom: 3rem;
+        }
+
+        .square-group {
+            display: flex;
+            gap: .3rem;
+            cursor: pointer;
+
+            .first-square {
+                width: .5rem;
+                height: .5rem;
+                background-color: $bkg_color_blue;
+                border-radius: 2px;
+            }
+
+            .second-square {
+                width: .5rem;
+                height: .5rem;
+                background-color:$bkg_color_black;
+                border-radius: 2px;
+            }
         }
     }
 }
