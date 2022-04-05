@@ -142,7 +142,8 @@ export default {
                 textarea {
                     padding: .5rem;
                     font-size: 12px;
-                    width: 100%;
+                    max-width: 443px;
+                    min-width: 443px;
                     height: 150px;
                     border: 1px solid $border_color_whitesmoke2;
                     border-radius: 3px;
