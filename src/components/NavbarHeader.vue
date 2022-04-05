@@ -1,7 +1,7 @@
 <template>
   <nav>
       <ul>
-          <li v-for="link in links" :key="link"><a href="#">{{ link }}</a></li>
+          <li v-for="(link, index) in links" :key="index" @click="setActiveLink(index)" :class="{active: index == activeLink }"><a href="#">{{ link }}</a></li>
       </ul>
   </nav>
 </template>
@@ -11,6 +11,7 @@ export default {
     name: 'NavbarHeader',
     data() {
         return {
+            activeLink: 0,
             links: [
                 'Home',
                 'About us',
@@ -19,6 +20,11 @@ export default {
                 'Contact US'
             ]
         };
+    },
+    methods: {
+        setActiveLink (index) {
+            this.activeLink = index;
+        },
     }
 }
 </script>

@@ -111,5 +111,13 @@ nav li:hover {
 	margin-bottom: 5rem;
 }
 
+li {
+	&.active {
+		border-bottom: 2px solid $border_color_blue;
 
+		& a {
+			color: $txt_color_blue;
+		}
+	}
+}
 

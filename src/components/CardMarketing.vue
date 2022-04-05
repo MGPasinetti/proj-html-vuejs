@@ -6,7 +6,7 @@
       <!-- COL-2 -->
       <div>
           <h3>Online Marketing</h3>
-          <small>Is is a long established fact that a reader will be distracted.</small>
+          <small>It is a long established fact that a reader will be distracted.</small>
           <ul>
               <li><i class="fas fa-check"></i>SEO</li>
               <li><i class="fas fa-check"></i>SEM</li>
