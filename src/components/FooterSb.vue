@@ -68,17 +68,24 @@ footer {
     padding: 3rem 0 5rem 0;
 
     .container-sec {
-        display: flex;
-        justify-content: space-between;
-        gap: 2rem;
+        @include flex-layout($justify: space-between, $align: flex-start, $wrap: nowrap);
+        gap: 4rem;
     
         .col {
-            display: flex;
-            flex-direction: column;
+            @include col-layout($direction: column, $align: flex-start);
             width: calc(100% / 4);
     
             .logo {
                 width: 8rem;
+                margin-bottom: .5rem;
+            }
+
+            small {
+                font-size: 12px;
+            }
+
+            a {
+                color: $txt_color_blue;
             }
         }
     }
