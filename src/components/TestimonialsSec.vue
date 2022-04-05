@@ -10,6 +10,10 @@
             <div class="testimonials-grid">
                 <CardTestimonial v-for="card in arrTestimonials" :key="card.name" :card-data="card"/>
             </div>
+            <div class="active-squares">
+                <span></span>
+                <span></span>
+            </div>
       </div>
     </div>
   </section>

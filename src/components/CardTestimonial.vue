@@ -1,9 +1,15 @@
 <template>
   <div class="card">
-    <img :src="cardData.srcImg" :alt="cardData.name">
-    <span><strong>{{ cardData.name }}</strong> - <small>{{ cardData.role }}</small></span>
-    <i class="fa-solid fa-quote-right"></i>
-    <p>{{ cardData.msg }}</p>
+    <div class="card inner">
+      <img :src="cardData.srcImg" :alt="cardData.name">
+      <span><strong>{{ cardData.name }}</strong> - <small>{{ cardData.role }}</small></span>
+      <i class="fa-solid fa-quote-right"></i>
+      <p>{{ cardData.msg }}</p>
+    </div>
+    <div class="stack-cards">
+      <div></div>
+      <div></div>
+    </div>
   </div>
 </template>
 
@@ -20,39 +26,74 @@ export default {
 @import "../assets/styles/style.scss";
 
 .card {
-  padding: 2.1rem;
-  @include col-layout($direction: column, $align: center);
-  background-color: $bkg_color_white;
   position: relative;
-  box-shadow: 6px 14px 28px 0px #cfcece;
 
-  img {
-    width: 3rem;
-    border-radius: 20rem;
-    margin-bottom: 2.5rem;
-  }
-
-  span {
-    margin-bottom: 2rem;
-
-    small {
-      font-size: 12px;
+  .card.inner {
+    padding: 2.5rem 2.1rem;
+    @include col-layout($direction: column, $align: center);
+    background-color: $bkg_color_white;
+    position: relative;
+    z-index: 2;
+    box-shadow: 6px 14px 28px 0px #cfcece;
+    border-radius: 3px;
+  
+    img {
+      width: 3rem;
+      border-radius: 20rem;
+      margin-bottom: 2.5rem;
     }
+  
+    span {
+      margin-bottom: 2rem;
+  
+      small {
+        font-size: 12px;
+      }
+    }
+  
+    i {
+      position: absolute;
+      top: 4rem;
+      font-size: 180px;
+      color: rgba(128, 128, 128, .2);
+      transform: rotateY(180deg);
+    }
+  
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      color: $txt_color_grey;
+      line-height: 1.5;
+    }
+  
   }
+  
+  .stack-cards {
+    position: relative;
 
-  i {
-    position: absolute;
-    top: 4rem;
-    font-size: 180px;
-    color: rgba(128, 128, 128, .2);
-    transform: rotateY(180deg);
-  }
+    & :first-child {
+      position: absolute;
+      bottom: -10px;
+      left: 10px;
+      z-index: 1;
+      width: calc(100% - 20px);
+      height: 100px;
+      background-color: $bkg_color_white;
+      box-shadow: 6px 14px 28px 0px #cfcece;
+      border-radius: 3px;
+    }
 
-  p {
-    font-size: 14px;
-    font-weight: 400;
-    color: $txt_color_grey;
-    line-height: 1.5;
+    & :last-child {
+      position: absolute;
+      bottom: -20px;
+      left: 20px;
+      z-index: 0;
+      width: calc(100% - 40px);
+      height: 100px;
+      background-color: $bkg_color_white;
+      box-shadow: 6px 14px 28px 0px #cfcece;
+      border-radius: 3px;
+    }
   }
 }
 </style>
