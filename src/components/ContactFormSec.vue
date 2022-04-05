@@ -1,8 +1,10 @@
 <template>
   <section class="contact-form-sec">
       <div class="container-sec">
-            <h2>Contact with our team</h2>
-            <small>If you are planning on developing a product landing.</small>
+            <div class="header-sec">
+                <h2>Contact with our team</h2>
+                <small>If you are planning on developing a product landing.</small>
+            </div>
             <div>
                 <!-- COL-LEFT -->
                 <img src="../assets/img/StaticMapService.GetMapIma.png" alt="map">
@@ -48,7 +50,7 @@ export default {
     flex-direction: column;
     align-items: center;
 
-    div {
+    div:last-child {
         display: flex;
         width: 100%;
 

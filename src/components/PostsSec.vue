@@ -1,8 +1,10 @@
 <template>
   <section class="post-sec">
       <div class="container-sec">
-            <h2>Latest Posts</h2>
-            <small>If you are planning on developing a product landing.</small>
+            <div class="header-sec">
+                <h2>Latest Posts</h2>
+                <small>If you are planning on developing a product landing.</small>
+            </div>
             <div class="posts-grid">
                 <CardPost class="card-post" v-for="post in arrPosts" :key="post.srcImg" :post-data="post"/>
             </div>

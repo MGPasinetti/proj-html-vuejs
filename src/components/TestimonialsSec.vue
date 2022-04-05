@@ -3,8 +3,10 @@
     <div class="big-sec">
       <img src="../assets/img/15.png" alt="">
       <div class="container-sec">
-            <h2>Our Testimonials</h2>
-            <small>If you are planning on developing a product landing app or website, take a look at this beautiful-cafted</small>
+            <div class="header-sec">
+                <h2>Our Testimonials</h2>
+                <small>If you are planning on developing a product landing app or website, take a look at this beautiful-cafted</small>
+            </div>
             <div class="testimonials-grid">
                 <CardTestimonial v-for="card in arrTestimonials" :key="card.name" :card-data="card"/>
             </div>
@@ -36,12 +38,12 @@ export default {
                     role: 'Manager Sofbox',
                     msg: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.' 
                 },
-                {
-                    srcImg: require('../assets/img/25.jpeg'),
-                    name: 'Max Fletcher',
-                    role: 'IT-Manager Sofbox',
-                    msg: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.' 
-                },
+                // {
+                //     srcImg: require('../assets/img/25.jpeg'),
+                //     name: 'Max Fletcher',
+                //     role: 'IT-Manager Sofbox',
+                //     msg: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.' 
+                // },
             ],
         };
     }
@@ -57,13 +59,12 @@ export default {
     .container-sec {
         position: relative;
         top: -100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include col-layout($direction: column, $align: center);
         background-color: transparent;
 
         .testimonials-grid {
             display: flex;
+            gap: 3rem;
         }
     }
 }
