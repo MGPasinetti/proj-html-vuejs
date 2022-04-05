@@ -10,9 +10,9 @@
             <div class="testimonials-grid">
                 <CardTestimonial v-for="card in arrTestimonials" :key="card.name" :card-data="card"/>
             </div>
-            <div class="active-squares">
-                <span></span>
-                <span></span>
+            <div class="square-group" style="display: flex; gap: .3rem;">
+                <div class="first-square" style="width: .5rem; height: .5rem; background-color: #377DFF; border-radius: 2px;"></div>
+                <div class="second-square" style="width: .5rem; height: .5rem; background-color: black; border-radius: 2px;"></div>
             </div>
       </div>
     </div>
@@ -69,6 +69,7 @@ export default {
         .testimonials-grid {
             display: flex;
             gap: 3rem;
+            margin-bottom: 3rem;
         }
     }
 }
