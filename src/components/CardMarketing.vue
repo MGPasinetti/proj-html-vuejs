@@ -28,6 +28,7 @@ export default {
 
 .card {
     display: flex;
+    cursor: pointer;
 
     img {
         width: 50px;

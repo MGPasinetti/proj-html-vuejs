@@ -50,6 +50,7 @@ button {
 	border: none;
 	border-radius: 3px;
 	font-size: 11px;
+	cursor: pointer;
 
 	&:hover {
 		background-color: $bkg_color_black;
@@ -77,8 +78,6 @@ nav li {
 }
 
 nav li:hover {
-	border-bottom: 2px solid $border_color_blue;
-
 	& a {
 		color: $txt_color_blue;
 	}

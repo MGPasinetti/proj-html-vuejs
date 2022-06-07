@@ -26,6 +26,7 @@ export default {
     position: relative;
     border: 1px solid $border_color_whitesmoke2; 
     border-radius: 3px;
+    cursor: pointer;
 
     img {
         width: 100%;

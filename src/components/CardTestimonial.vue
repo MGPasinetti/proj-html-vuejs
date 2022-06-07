@@ -28,6 +28,7 @@ export default {
 .card {
   position: relative;
   display: none;
+  cursor: pointer;
 
   &.visible {
     display: block;
